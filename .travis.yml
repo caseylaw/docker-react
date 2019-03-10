@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t casey.law/docker-react -f Dockerfile.dev .
+  - docker build -t caseylaw/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run casey.law/docker-react npm run test -- --coverage
+  - docker run caseylaw/docker-react npm run test -- --coverage
